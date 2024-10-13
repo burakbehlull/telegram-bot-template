@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "Burak <@burakbehlull>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0"
+  }
 }

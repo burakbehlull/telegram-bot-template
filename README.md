@@ -1,9 +1,5 @@
-# Discordjs Magic
+# Telegram Bot Template
 
 
 ### Set up:
-` npm i -g discordjs-magic`
-
-| Command | Purpose | Use |
-| ------- | ------- | ------- |
-| create | Creating a file by giving a filename parameter | -fn ` fileName ` |
+` npm install `
