@@ -1,5 +1,5 @@
 
-class AddMessageButtons {
+class MessageButtons {
     constructor(){
         this.buttons = []
     }
@@ -16,4 +16,8 @@ class AddMessageButtons {
         }
         return options
     }
+}
+
+module.exports = {
+    MessageButtons
 }
