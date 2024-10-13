@@ -9,8 +9,16 @@ class Bot {
     command(name, callback){
         return this.bot.onText(name, (...props)=> callback(...props))
     }
-    on(callback){
-        return this.bot.on('callback_query', (...cq)=> callback(...cq))
+    watchCommand(commandName, callback){
+        this.bot.on('callback_query', (...cq)=> {
+            const msg = cq.message
+            const chatId = msg.chat.id
+            const data = cq.data
+            if(data===commandName){
+                callback(chatId,...cq)
+            }
+        })
+        return
     }
     message(messageId, text, options){
         return this.bot.sendMessage(messageId, text, options)
