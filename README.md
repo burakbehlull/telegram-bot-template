@@ -8,7 +8,7 @@
 ` base.js `
 | Command |  About |  Use | 
 | -------- |  -------- |  -------- | 
-| .command("/example", call function) |  Add bot command |  Bot.command("/example", callback function) | 
+| .command() |  Add bot command |  Bot.command("/example", callback function) | 
 | .watchCommand() |  .. |  Bot.watchCommand("/example", callback function) | 
 
 
